@@ -1,0 +1,15 @@
+@use 'flexboard';
+@use 'mediaquery';
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #019EB7;
+  background-image: -webkit-gradient(linear, right #019eb7 #2cb9cc, );
+  background-image: linear-gradient(to right #019EB7 #2CB9CC);
+}
+/*# sourceMappingURL=input.css.map */

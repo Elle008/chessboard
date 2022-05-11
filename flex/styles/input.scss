@@ -1,0 +1,19 @@
+@use 'flexboard';
+@use 'mediaquery';
+
+$accent-dark: #019EB7;
+$accent-light: #2CB9CC;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #019EB7;
+    background-image: linear-gradient(to right $accent-dark $accent-light);
+}
+
+
+
