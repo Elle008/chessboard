@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./flex/styles/images/grains.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15vmin;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    font: bold 10vmin 'verdana', sans-serif;
+    text-align: center;
+    color: #1D1007;
+}
+
+img {
+    width: 30vmin;
+    align-self: center;
+}
+
+/* .button-div {
+    display: inline-block;
+} */
+
+button {
+    margin: 5vmin;
+    padding: 2vmin 8vmin;
+    border: none;
+    background-color: #B17539;
+    border-radius: 50px;
+    font: bold 4vmin 'verdana', sans-serif;
+}
+
+button:hover {
+    background-color: #744721 ;
+}

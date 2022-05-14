@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 $light: #FBE7C5;
@@ -9,8 +10,8 @@ $darkest: #1D1007;
 $border:#898989;
 $black: #19191a;
 $brown: #a9761e;
-$heading: 'Verdana', sans-serif;  
-$heading2: 'Kaushan Script', cursive;
+$heading: 'Verdana', sans-serif; 
+$cursive: 'Kaushan Script', cursive;
 
 * {
     margin: 0;
@@ -19,6 +20,7 @@ $heading2: 'Kaushan Script', cursive;
 }
 
 body {
+    width: auto;
     height: 100vmin;
     background: linear-gradient(180deg, #85562E 50%, $grey 50%) no-repeat;
 }
@@ -32,12 +34,11 @@ h1 {
 }
 
 h2 {
-    font: bold 7vmin $heading2;
+    font: bold 7vmin $cursive;
     text-align: center;
     color: #fcbf6a;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     margin: -7vmin 0 2vmin 0;
-    
 }
 
 .border {
@@ -49,7 +50,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .board {
@@ -57,13 +57,9 @@ h2 {
     height: 95%;
     border: 2px solid $border;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.box {
-    width: 12.5%;
-    height: 12.5%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
 }
 
 .white {
